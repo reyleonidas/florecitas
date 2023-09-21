@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+    background: linear-gradient(135deg, #ffcccc, #ff99cc, #ff66cc);
+}
+
+/* Estilos para el botón "Clicka aqui" */
+.Contenedor-Binicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Button {
+    font-family: monospace;
+    font-size: x-large;
+    transition-duration: 0.2s;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: greenyellow;
+    color: black;
+    border: 2px solid green;
+    cursor: pointer;
+}
+
+/* Estilos para el cuadro emergente */
+.Con-Emergente {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cua {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: aparecer 0.5s ease-out;
+}
+
+/* Estilos para los botones 1 Flor y 12 Flores */
+.Con-2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.Con {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Estilos para el canvas y el texto */
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Flor {
+    width: 100%;
+    max-width: 800px; /* Tamaño máximo del canvas */
+    height: auto; /* Se ajustará automáticamente según el ancho */
+}
+
+.Texto {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    body{
+	background: linear-gradient(135deg, #ffcccc, #ff99cc, #ff66cc);
+	}
+    .Con-2 {
+        margin-top: 10px;
+    }
+
+    .Flor {
+        max-width: 100%; /* Hace que el canvas ocupe el ancho completo */
+        height: auto;
+    }
+
+    /* Estilos específicos para pantallas pequeñas */
+    .Texto h2 {
+        font-size: 50px;
+    }
+
+    #B12 {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 468px) {
+    body {
+       background: linear-gradient(135deg, #ffcccc, #ff99cc, #ff66cc);
+    }
+}
